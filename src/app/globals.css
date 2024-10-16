@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+header {
+    @apply bg-slate-600 p-4 flex justify-between;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .logo {
+    @apply text-2xl font-bold;
   }
-}
+  
+  nav ul {
+    @apply flex space-x-4;
+  }
+  
+  nav a {
+    @apply hover:text-blue-500 transition duration-300;
+  }
+  
+ 
+ 
